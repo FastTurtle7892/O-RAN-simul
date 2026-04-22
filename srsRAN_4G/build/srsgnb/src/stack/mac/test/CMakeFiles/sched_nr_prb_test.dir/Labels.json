@@ -1,0 +1,17 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ubuntu/5G_Workspace/srsRAN_4G/srsgnb/src/stack/mac/test/sched_nr_prb_test.cc"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sched",
+			"nr"
+		],
+		"name" : "sched_nr_prb_test"
+	}
+}

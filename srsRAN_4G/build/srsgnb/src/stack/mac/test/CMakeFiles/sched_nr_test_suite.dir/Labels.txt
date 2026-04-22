@@ -1,0 +1,7 @@
+# Directory labels
+ sched
+ nr
+# Source files and their labels
+/home/ubuntu/5G_Workspace/srsRAN_4G/srsgnb/src/stack/mac/test/sched_nr_common_test.cc
+/home/ubuntu/5G_Workspace/srsRAN_4G/srsgnb/src/stack/mac/test/sched_nr_ue_ded_test_suite.cc
+/home/ubuntu/5G_Workspace/srsRAN_4G/srsgnb/src/stack/mac/test/sched_nr_sim_ue.cc

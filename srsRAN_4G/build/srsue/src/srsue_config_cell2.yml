@@ -5,8 +5,7 @@ rx_gain = 40
 srate = 11.52e6
 nof_antennas = 1
 device_name = zmq
-# ★주의: 아래 줄에 id=ue 를 반드시 넣어야 ZMQ 에러가 안 납니다!
-device_args = tx_port=tcp://127.0.0.1:2001,rx_port=tcp://127.0.0.1:2000,tx_port=tcp://127.0.0.1:2003,rx_port=tcp://127.0.0.1:2002,id=ue,base_srate=11.52e6
+device_args = tx_port=tcp://127.0.0.1:2003,rx_port=tcp://127.0.0.1:2002,id=ue2,base_srate=11.52e6
 
 [rat.eutra]
 dl_earfcn = 2850
@@ -20,16 +19,16 @@ nof_carriers = 1
 enable = none
 
 [log]
-all_level = info
-filename = /tmp/ue.log
+all_level = warning
+filename = /tmp/ue2.log
 
 [usim]
 mode = soft
 algo = milenage
 opc= 63BFA50EE6523365FF14C1F45F88737D
 k= 00112233445566778899aabbccddeeff
-imsi = 001010123456780
-imei = 353490069873319
+imsi = 001010123456799
+imei = 353490069873320
 
 [rrc]
 release = 15
@@ -40,9 +39,8 @@ apn = srsapn
 apn_protocol = ipv4
 
 [gw]
-# ★핵심: 아까 만든 가상 네트워크 방(ue1)으로 트래픽을 보냅니다.
-netns = ue1
-ip_devname = tun_srsue
+netns = ue2
+ip_devname = tun_srsue2
 ip_netmask = 255.255.255.0
 
 [gui]
